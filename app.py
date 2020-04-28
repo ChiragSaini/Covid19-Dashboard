@@ -6,13 +6,13 @@ c = covid.Covid()
 
 @st.cache
 def load_data_and_return_dataframe():
-    all_cases = c.get_all_cases()
+    all_cases = c.get_data()
     df = pd.DataFrame({
-    'Country': [i['attributes']['Country_Region'] for i in all_cases],
-    'Confirmed': [i['attributes']['Confirmed'] for i in all_cases],
-    'Deaths': [i['attributes']['Deaths'] for i in all_cases],
-    'Recovered': [i['attributes']['Recovered'] for i in all_cases],
-    'Active': [i['attributes']['Active'] for i in all_cases]
+    'Country': [i['country'] for i in all_cases],
+    'Confirmed': [i['confirmed'] for i in all_cases],
+    'Deaths': [i['deaths'] for i in all_cases],
+    'Recovered': [i['recovered'] for i in all_cases],
+    'Active': [i['active'] for i in all_cases]
     # 'latitude': [i['attributes']['Lat'] for i in all_cases],
     # 'longitude': [i['attributes']['Long_'] for i in all_cases]
     })
@@ -33,6 +33,7 @@ if sel_country:
 
 st.markdown("<h2>Top 10 Countries affected</h2>", unsafe_allow_html=True)
 ax  =df[:10].plot(kind='bar', legend=True, fontsize=8)
+plt.ticklabel_format(axis="y", style="plain", scilimits=None)
 ax.set_xticklabels(df[:10]["Country"])
 st.pyplot()
 for data in df[:10].values:
