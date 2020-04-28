@@ -42,3 +42,9 @@ for data in df[:10].values:
 
 st.markdown("<h3> All Countries Data</h3>", unsafe_allow_html=True)
 st.dataframe(df)
+
+st.sidebar.subheader("Covid19 Dashboard")
+st.sidebar.subheader("Made by Chirag Saini")
+st.sidebar.markdown("<h5><a href='https://github.com/ChiragSaini/' target='_blank'>Github</a></h5>", unsafe_allow_html=True)
+st.sidebar.markdown("<h5><a href='https://www.linkedin.com/in/chiragsaini97/' target='_blank'>LinkedIn</a></h5>", unsafe_allow_html=True)
+st.sidebar.markdown("<h5><a href='https://twitter.com/ChiragSaini97' target='_blank'>Twitter</a></h5>", unsafe_allow_html=True)
