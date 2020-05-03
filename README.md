@@ -15,7 +15,7 @@ streamlit run app.py
   <img src="https://github.com/ChiragSaini/Covid19-Dashboard/blob/master/Screenshots/home2.PNG"><br>
   
   <li>Selected Countires status</li>
-  <img src="https://github.com/ChiragSaini/Covid19-Dashboard/blob/master/Screenshots/home3.PNG"><br>
+  <img src="https://github.com/ChiragSaini/Covid19-Dashboard/blob/master/Screenshots/updated_card_ui.PNG"><br>
   
   <li>Top 10 Affected Countires chart</li>
   <img src="https://github.com/ChiragSaini/Covid19-Dashboard/blob/master/Screenshots/chart.PNG"><br>
