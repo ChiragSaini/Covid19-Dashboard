@@ -14,17 +14,17 @@ c = covid.Covid()
 
 # converts DataFrame to presentable card view in rows
 def get_ui_for_data(data_input):
-    column_properties = "margin:2%; padding:1%; float:right; width:15%; text-align: right"
-    base_card_styling = "margin:2%; padding:1%; " \
+    column_properties = "margin:3%; float:right; width:15%; text-align: right"
+    base_card_styling = "margin:1%; padding:1%; " \
                         "text-align:center;" \
                         "width:16%; " \
                         "box-shadow:0 4px 8px 0 rgba(0,0,0,0.2);"
-    return f"<div class='row ml-4'>" \
+    return f"<div class='row'>" \
            f"<h5 style='color:black; {column_properties}'>{data_input[0]}</h5>" \
-           f"<h5 style='color:blue; {base_card_styling}'><ul>Total</ul>{data_input[1]}</h5> " \
-           f"<h5 style='color:orange; {base_card_styling}'><ul>Deaths</ul>{data_input[2]}</h5> " \
-           f"<h5 style='color:green; {base_card_styling}'><ul>Saved</ul>{data_input[3]}</h5> " \
-           f"<h5 style='color:red; {base_card_styling}'><ul>Active</ul>{data_input[4]}</h5> " \
+           f"<h5 style='color:blue; {base_card_styling}'><h6>Total</h6>{data_input[1]}</h5> " \
+           f"<h5 style='color:orange; {base_card_styling}'><h6>Deaths</h6>{data_input[2]}</h5> " \
+           f"<h5 style='color:green; {base_card_styling}'><h6>Saved</h6>{data_input[3]}</h5> " \
+           f"<h5 style='color:red; {base_card_styling}'><h6>Active</h6>{data_input[4]}</h5> " \
            f"</div>"
 
 
