@@ -10,14 +10,14 @@ def get_ui_for_data(data_input):
     column_properties = "margin:2%; padding:1%; float:right; width:15%; text-align: right"
     base_card_styling = "margin:2%; padding:1%; " \
                         "text-align:center;" \
-                        "width:15%; " \
+                        "width:16%; " \
                         "box-shadow:0 4px 8px 0 rgba(0,0,0,0.2);"
     return f"<div class='row ml-4'>" \
-           f"<h4 style='color:black; {column_properties}'>{data_input[0]}</h4>" \
-           f"<h4 style='color:blue; {base_card_styling}'><ul>Confirmed</ul>{data_input[1]}</h4> " \
-           f"<h4 style='color:orange; {base_card_styling}'><ul>Deaths</ul>{data_input[2]}</h4> " \
-           f"<h4 style='color:green; {base_card_styling}'><ul>Recovered</ul>{data_input[3]}</h4> " \
-           f"<h4 style='color:red; {base_card_styling}'><ul>Active</ul>{data_input[4]}</h4> " \
+           f"<h5 style='color:black; {column_properties}'>{data_input[0]}</h5>" \
+           f"<h5 style='color:blue; {base_card_styling}'><ul>Total</ul>{data_input[1]}</h5> " \
+           f"<h5 style='color:orange; {base_card_styling}'><ul>Deaths</ul>{data_input[2]}</h5> " \
+           f"<h5 style='color:green; {base_card_styling}'><ul>Saved</ul>{data_input[3]}</h5> " \
+           f"<h5 style='color:red; {base_card_styling}'><ul>Active</ul>{data_input[4]}</h5> " \
            f"</div>"
 
 
@@ -46,6 +46,13 @@ if sel_country:
         countries.append(df[df["Country"] == c].values)
     for arr in countries:
         data = arr[0]
+        data[1] = str(round(data[1] / 1000, 1)) + " K"
+        data[2] = str(round(data[2] / 1000, 1)) + " K"
+        data[3] = str(round(data[3] / 1000, 1)) + " K"
+        data[4] = str(round(data[4] / 1000, 1)) + " K"
+        # data[2] = str(data[2] / 1000) + " K"
+        # data[3] = str(data[3] / 1000) + " K"
+        # data[4] = str(data[4] / 1000) + " K"
         st.markdown(get_ui_for_data(data), unsafe_allow_html=True)
 
 st.markdown("<h2>Top 10 Countries affected</h2>", unsafe_allow_html=True)
@@ -54,6 +61,10 @@ plt.ticklabel_format(axis="y", style="plain", scilimits=None)
 ax.set_xticklabels(df[:10]["Country"])
 st.pyplot()
 for data in df[:10].values:
+    data[1] = str(round(data[1] / 1000, 1)) + " K"
+    data[2] = str(round(data[2] / 1000, 1)) + " K"
+    data[3] = str(round(data[3] / 1000, 1)) + " K"
+    data[4] = str(round(data[4] / 1000, 1)) + " K" 
     st.markdown(get_ui_for_data(data), unsafe_allow_html=True)
 
 st.markdown("<h3> All Countries Data</h3>", unsafe_allow_html=True)
