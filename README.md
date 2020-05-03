@@ -19,6 +19,9 @@ streamlit run app.py
   
   <li>Top 10 Affected Countires chart</li>
   <img src="https://github.com/ChiragSaini/Covid19-Dashboard/blob/master/Screenshots/chart.PNG"><br>
+ 
+  <li>Country Data in New Card UI</li>
+  <img src="https://github.com/ChiragSaini/Covid19-Dashboard/blob/master/Screenshots/updated_cardPNG.PNG"><br>
   
   <li>All Countries data Table</li>
   <img src="https://github.com/ChiragSaini/Covid19-Dashboard/blob/master/Screenshots/df.PNG"><br>
