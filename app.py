@@ -22,9 +22,9 @@ def get_ui_for_data(data_input):
     return f"<div class='row'>" \
            f"<h5 style='color:black; {column_properties}'>{data_input[0]}</h5>" \
            f"<h5 style='color:blue; {base_card_styling}'><h6>Total</h6>{data_input[1]}</h5> " \
-           f"<h5 style='color:orange; {base_card_styling}'><h6>Deaths</h6>{data_input[2]}</h5> " \
+           f"<h5 style='color:red; {base_card_styling}'><h6>Deaths</h6>{data_input[2]}</h5> " \
            f"<h5 style='color:green; {base_card_styling}'><h6>Saved</h6>{data_input[3]}</h5> " \
-           f"<h5 style='color:red; {base_card_styling}'><h6>Active</h6>{data_input[4]}</h5> " \
+           f"<h5 style='color:orange; {base_card_styling}'><h6>Active</h6>{data_input[4]}</h5> " \
            f"</div>"
 
 
