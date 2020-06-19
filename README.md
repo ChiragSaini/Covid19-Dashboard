@@ -9,20 +9,17 @@ streamlit run app.py
 ## Screenshots
 <ul>
   <li>HomeScreen</li>
-  <img src="https://github.com/ChiragSaini/Covid19-Dashboard/blob/master/Screenshots/home1.PNG"><br>
+  <img src="https://github.com/ChiragSaini/Covid19-Dashboard/blob/master/Screenshots/home.png"><br>
   
-  <li>Select one or multiple Countries to check their status</li>
-  <img src="https://github.com/ChiragSaini/Covid19-Dashboard/blob/master/Screenshots/home2.PNG"><br>
+  <li>Selected States status</li>
+  <img src="https://github.com/ChiragSaini/Covid19-Dashboard/blob/master/Screenshots/selection.png"><br>
   
-  <li>Selected Countires status</li>
-  <img src="https://github.com/ChiragSaini/Covid19-Dashboard/blob/master/Screenshots/updated_card_ui.PNG"><br>
+  <li>Top 10 Affected States chart</li>
+  <img src="https://github.com/ChiragSaini/Covid19-Dashboard/blob/master/Screenshots/top10.png"><br>
   
-  <li>Top 10 Affected Countires chart</li>
-  <img src="https://github.com/ChiragSaini/Covid19-Dashboard/blob/master/Screenshots/chart.PNG"><br>
- 
-  <li>Country Data in New Card UI</li>
-  <img src="https://github.com/ChiragSaini/Covid19-Dashboard/blob/master/Screenshots/updated_cardPNG.PNG"><br>
-  
-  <li>All Countries data Table</li>
-  <img src="https://github.com/ChiragSaini/Covid19-Dashboard/blob/master/Screenshots/df.PNG"><br>
+  <li>All States data Table</li>
+  <img src="https://github.com/ChiragSaini/Covid19-Dashboard/blob/master/Screenshots/allstates.png"><br>
+
+  <li>Responsive Mobile View</li>
+  <img src="https://github.com/ChiragSaini/Covid19-Dashboard/blob/master/Screenshots/mobile.png"><br>
 </ul>
